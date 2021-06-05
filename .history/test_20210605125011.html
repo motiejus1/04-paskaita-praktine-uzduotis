@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid {
+            margin: auto;
+            display: grid;
+            width: 90%;
+            background-color: thistle;
+            grid-template-columns: repeat(12, 12fr);
+            grid-template-rows: repeat(12, 12fr);
+            outline: 2px solid black;
+            justify-items: stretch;
+            grid-template-areas: "pirma" "antra";
+        }
+        
+        .rw1 {
+            grid-area: pirma;
+        }
+        
+        .rw2 {
+            grid-area: antra;
+        }
+        
+        .cll {
+            justify-items: center;
+        }
+        
+        .cll316 {
+            grid-column-start: 1;
+            grid-column-end: span 6;
+            grid-row-start: 3;
+            grid-row-end: 3;
+            background-color: powderblue;
+            justify-content: center;
+        }
+        
+        .cll389 {
+            grid-column-start: 8;
+            grid-column-end: span 2;
+            grid-row-start: 3;
+            grid-row-end: 3;
+            background-color: rgb(60, 226, 124);
+        }
+        
+        .cll8112 {
+            grid-column-start: 1;
+            grid-column-end: span 12;
+            grid-row-start: 8;
+            grid-row-end: 8;
+            background-color: powderblue;
+        }
+        
+        img {
+            height: 15px;
+            width: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="cll">
+            <img src="https://dappimg.com/media/image/app/6d8fc8150ce04166b6e506074f43c3c4.jpg">
+        </div>
+        <div class="cll">
+            <img src="https://dappimg.com/media/image/app/6d8fc8150ce04166b6e506074f43c3c4.jpg">
+        </div>
+        <div class="cll">
+            <img src="https://pbs.twimg.com/media/EscHbBCUYAA8bAD.png">
+        </div>
+        <div class="cll">
+            <img src="https://pbs.twimg.com/media/EscHbBCUYAA8bAD.png">
+        </div>
+        <div class="cll">
+            <img src="https://dappimg.com/media/image/app/6d8fc8150ce04166b6e506074f43c3c4.jpg">
+        </div>
+        <div class="cll">
+            <img src="https://dappimg.com/media/image/app/6d8fc8150ce04166b6e506074f43c3c4.jpg">
+        </div>
+        <div class="cll">
+            <img src="https://pbs.twimg.com/media/EscHbBCUYAA8bAD.png">
+        </div>
+        <div class="cll">
+            <img src="https://pbs.twimg.com/media/EscHbBCUYAA8bAD.png">
+        </div>
+        <div class="cll">
+            <img src="https://dappimg.com/media/image/app/6d8fc8150ce04166b6e506074f43c3c4.jpg">
+        </div>
+        <div class="cll">
+            <img src="https://dappimg.com/media/image/app/6d8fc8150ce04166b6e506074f43c3c4.jpg">
+        </div>
+        <div class="cll">
+            <img src="https://pbs.twimg.com/media/EscHbBCUYAA8bAD.png">
+        </div>
+        <div class="cll">
+            <img src="https://pbs.twimg.com/media/EscHbBCUYAA8bAD.png">
+        </div>
+        <div class="cll">
+            <img src="https://dappimg.com/media/image/app/6d8fc8150ce04166b6e506074f43c3c4.jpg">
+        </div>
+        <div class="cll">
+            <img src="https://dappimg.com/media/image/app/6d8fc8150ce04166b6e506074f43c3c4.jpg">
+        </div>
+        <div class="cll">
+            <img src="https://pbs.twimg.com/media/EscHbBCUYAA8bAD.png">
+        </div>
+        <div class="cll">
+            <img src="https://pbs.twimg.com/media/EscHbBCUYAA8bAD.png">
+        </div>
+        <div class="cll">
+            <img src="https://dappimg.com/media/image/app/6d8fc8150ce04166b6e506074f43c3c4.jpg">
+        </div>
+        <div class="cll">
+            <img src="https://dappimg.com/media/image/app/6d8fc8150ce04166b6e506074f43c3c4.jpg">
+        </div>
+        <div class="cll">
+            <img src="https://pbs.twimg.com/media/EscHbBCUYAA8bAD.png">
+        </div>
+        <div class="cll">
+            <img src="https://pbs.twimg.com/media/EscHbBCUYAA8bAD.png">
+        </div>
+        <div class="cll">
+            <img src="https://dappimg.com/media/image/app/6d8fc8150ce04166b6e506074f43c3c4.jpg">
+        </div>
+        <div class="cll">
+            <img src="https://dappimg.com/media/image/app/6d8fc8150ce04166b6e506074f43c3c4.jpg">
+        </div>
+        <div class="cll">
+            <img src="https://pbs.twimg.com/media/EscHbBCUYAA8bAD.png">
+        </div>
+        <div class="cll">
+            <img src="https://pbs.twimg.com/media/EscHbBCUYAA8bAD.png">
+        </div>
+        <div class="cll316">
+            <img src="https://dappimg.com/media/image/app/6d8fc8150ce04166b6e506074f43c3c4.jpg">
+        </div>
+        <div class="cll">
+            <img src="https://pbs.twimg.com/media/EscHbBCUYAA8bAD.png">
+        </div>
+        <div class="cll389">
+            <img src="https://pbs.twimg.com/media/EscHbBCUYAA8bAD.png">
+        </div>
+        <div class="cll">
+            <img src="https://pbs.twimg.com/media/EscHbBCUYAA8bAD.png">
+        </div>
+        <div class="cll">
+            <img src="https://pbs.twimg.com/media/EscHbBCUYAA8bAD.png">
+        </div>
+        <div class="cll">
+            <img src="https://pbs.twimg.com/media/EscHbBCUYAA8bAD.png">
+        </div>
+        <div class="cll">
+            <img src="https://dappimg.com/media/image/app/6d8fc8150ce04166b6e506074f43c3c4.jpg">
+        </div>
+        <div class="cll">
+            <img src="https://dappimg.com/media/image/app/6d8fc8150ce04166b6e506074f43c3c4.jpg">
+        </div>
+        <div class="cll">
+            <img src="https://pbs.twimg.com/media/EscHbBCUYAA8bAD.png">
+        </div>
+        <div class="cll">
+            <img src="https://pbs.twimg.com/media/EscHbBCUYAA8bAD.png">
+        </div>
+        <div class="cll">
+            <img src="https://dappimg.com/media/image/app/6d8fc8150ce04166b6e506074f43c3c4.jpg">
+        </div>
+        <div class="cll">
+            <img src="https://dappimg.com/media/image/app/6d8fc8150ce04166b6e506074f43c3c4.jpg">
+        </div>
+        <div class="cll">
+            <img src="https://pbs.twimg.com/media/EscHbBCUYAA8bAD.png">
+        </div>
+        <div class="cll">
+            <img src="https://pbs.twimg.com/media/EscHbBCUYAA8bAD.png">
+        </div>
+        <div class="cll">
+            <img src="https://dappimg.com/media/image/app/6d8fc8150ce04166b6e506074f43c3c4.jpg">
+        </div>
+        <div class="cll">
+            <img src="https://dappimg.com/media/image/app/6d8fc8150ce04166b6e506074f43c3c4.jpg">
+        </div>
+        <div class="cll">
+            <img src="https://pbs.twimg.com/media/EscHbBCUYAA8bAD.png">
+        </div>
+        <div class="cll">
+            <img src="https://pbs.twimg.com/media/EscHbBCUYAA8bAD.png">
+        </div>
+        <div class="cll">
+            <img src="https://dappimg.com/media/image/app/6d8fc8150ce04166b6e506074f43c3c4.jpg">
+        </div>
+        <div class="cll">
+            <img src="https://dappimg.com/media/image/app/6d8fc8150ce04166b6e506074f43c3c4.jpg">
+        </div>
+        <div class="cll">
+            <img src="https://pbs.twimg.com/media/EscHbBCUYAA8bAD.png">
+        </div>
+        <div class="cll">
+            <img src="https://pbs.twimg.com/media/EscHbBCUYAA8bAD.png">
+        </div>
+        <div class="cll">
+            <img src="https://dappimg.com/media/image/app/6d8fc8150ce04166b6e506074f43c3c4.jpg">
+        </div>
+        <div class="cll">
+            <img src="https://dappimg.com/media/image/app/6d8fc8150ce04166b6e506074f43c3c4.jpg">
+        </div>
+        <div class="cll">
+            <img src="https://pbs.twimg.com/media/EscHbBCUYAA8bAD.png">
+        </div>
+        <div class="cll">
+            <img src="https://pbs.twimg.com/media/EscHbBCUYAA8bAD.png">
+        </div>
+        <div class="cll">
+            <img src="https://dappimg.com/media/image/app/6d8fc8150ce04166b6e506074f43c3c4.jpg">
+        </div>
+        <div class="cll">
+            <img src="https://dappimg.com/media/image/app/6d8fc8150ce04166b6e506074f43c3c4.jpg">
+        </div>
+        <div class="cll">
+            <img src="https://pbs.twimg.com/media/EscHbBCUYAA8bAD.png">
+        </div>
+        <div class="cll">
+            <img src="https://pbs.twimg.com/media/EscHbBCUYAA8bAD.png">
+        </div>
+        <div class="cll">
+            <img src="https://dappimg.com/media/image/app/6d8fc8150ce04166b6e506074f43c3c4.jpg">
+        </div>
+        <div class="cll">
+            <img src="https://dappimg.com/media/image/app/6d8fc8150ce04166b6e506074f43c3c4.jpg">
+        </div>
+        <div class="cll">
+            <img src="https://pbs.twimg.com/media/EscHbBCUYAA8bAD.png">
+        </div>
+        <div class="cll">
+            <img src="https://pbs.twimg.com/media/EscHbBCUYAA8bAD.png">
+        </div>
+        <div class="cll">
+            <img src="https://dappimg.com/media/image/app/6d8fc8150ce04166b6e506074f43c3c4.jpg">
+        </div>
+        <div class="cll">
+            <img src="https://dappimg.com/media/image/app/6d8fc8150ce04166b6e506074f43c3c4.jpg">
+        </div>
+        <div class="cll">
+            <img src="https://pbs.twimg.com/media/EscHbBCUYAA8bAD.png">
+        </div>
+        <div class="cll">
+            <img src="https://pbs.twimg.com/media/EscHbBCUYAA8bAD.png">
+        </div>
+        <div class="cll">
+            <img src="https://dappimg.com/media/image/app/6d8fc8150ce04166b6e506074f43c3c4.jpg">
+        </div>
+        <div class="cll">
+            <img src="https://dappimg.com/media/image/app/6d8fc8150ce04166b6e506074f43c3c4.jpg">
+        </div>
+        <div class="cll">
+            <img src="https://pbs.twimg.com/media/EscHbBCUYAA8bAD.png">
+        </div>
+        <div class="cll">
+            <img src="https://pbs.twimg.com/media/EscHbBCUYAA8bAD.png">
+        </div>
+        <div class="cll">
+            <img src="https://dappimg.com/media/image/app/6d8fc8150ce04166b6e506074f43c3c4.jpg">
+        </div>
+        <div class="cll">
+            <img src="https://dappimg.com/media/image/app/6d8fc8150ce04166b6e506074f43c3c4.jpg">
+        </div>
+        <div class="cll">
+            <img src="https://pbs.twimg.com/media/EscHbBCUYAA8bAD.png">
+        </div>
+        <div class="cll">
+            <img src="https://pbs.twimg.com/media/EscHbBCUYAA8bAD.png">
+        </div>
+        <div class="cll">
+            <img src="https://dappimg.com/media/image/app/6d8fc8150ce04166b6e506074f43c3c4.jpg">
+        </div>
+        <div class="cll">
+            <img src="https://dappimg.com/media/image/app/6d8fc8150ce04166b6e506074f43c3c4.jpg">
+        </div>
+        <div class="cll">
+            <img src="https://pbs.twimg.com/media/EscHbBCUYAA8bAD.png">
+        </div>
+        <div class="cll">
+            <img src="https://pbs.twimg.com/media/EscHbBCUYAA8bAD.png">
+        </div>
+        <div class="cll">
+            <img src="https://dappimg.com/media/image/app/6d8fc8150ce04166b6e506074f43c3c4.jpg">
+        </div>
+        <div class="cll">
+            <img src="https://dappimg.com/media/image/app/6d8fc8150ce04166b6e506074f43c3c4.jpg">
+        </div>
+        <div class="cll">
+            <img src="https://pbs.twimg.com/media/EscHbBCUYAA8bAD.png">
+        </div>
+        <div class="cll">
+            <img src="https://pbs.twimg.com/media/EscHbBCUYAA8bAD.png">
+        </div>
+        <div class="cll8112">
+            <img src="https://www.larvalabs.com/cryptopunks/cryptopunk6634.png">
+        </div>
+        <div class="cll">
+            <img src="https://dappimg.com/media/image/app/6d8fc8150ce04166b6e506074f43c3c4.jpg">
+        </div>
+        <div class="cll">
+            <img src="https://dappimg.com/media/image/app/6d8fc8150ce04166b6e506074f43c3c4.jpg">
+        </div>
+        <div class="cll">
+            <img src="https://pbs.twimg.com/media/EscHbBCUYAA8bAD.png">
+        </div>
+        <div class="cll">
+            <img src="https://pbs.twimg.com/media/EscHbBCUYAA8bAD.png">
+        </div>
+        <div class="cll">
+            <img src="https://dappimg.com/media/image/app/6d8fc8150ce04166b6e506074f43c3c4.jpg">
+        </div>
+        <div class="cll">
+            <img src="https://dappimg.com/media/image/app/6d8fc8150ce04166b6e506074f43c3c4.jpg">
+        </div>
+        <div class="cll">
+            <img src="https://pbs.twimg.com/media/EscHbBCUYAA8bAD.png">
+        </div>
+        <div class="cll">
+            <img src="https://pbs.twimg.com/media/EscHbBCUYAA8bAD.png">
+        </div>
+        <div class="cll">
+            <img src="https://dappimg.com/media/image/app/6d8fc8150ce04166b6e506074f43c3c4.jpg">
+        </div>
+        <div class="cll">
+            <img src="https://dappimg.com/media/image/app/6d8fc8150ce04166b6e506074f43c3c4.jpg">
+        </div>
+        <div class="cll">
+            <img src="https://pbs.twimg.com/media/EscHbBCUYAA8bAD.png">
+        </div>
+        <div class="cll">
+            <img src="https://pbs.twimg.com/media/EscHbBCUYAA8bAD.png">
+        </div>
+        <div class="cll">
+            <img src="https://dappimg.com/media/image/app/6d8fc8150ce04166b6e506074f43c3c4.jpg">
+        </div>
+        <div class="cll">
+            <img src="https://dappimg.com/media/image/app/6d8fc8150ce04166b6e506074f43c3c4.jpg">
+        </div>
+        <div class="cll">
+            <img src="https://pbs.twimg.com/media/EscHbBCUYAA8bAD.png">
+        </div>
+        <div class="cll">
+            <img src="https://pbs.twimg.com/media/EscHbBCUYAA8bAD.png">
+        </div>
+        <div class="cll">
+            <img src="https://dappimg.com/media/image/app/6d8fc8150ce04166b6e506074f43c3c4.jpg">
+        </div>
+        <div class="cll">
+            <img src="https://dappimg.com/media/image/app/6d8fc8150ce04166b6e506074f43c3c4.jpg">
+        </div>
+        <div class="cll">
+            <img src="https://pbs.twimg.com/media/EscHbBCUYAA8bAD.png">
+        </div>
+        <div class="cll">
+            <img src="https://pbs.twimg.com/media/EscHbBCUYAA8bAD.png">
+        </div>
+        <div class="cll">
+            <img src="https://dappimg.com/media/image/app/6d8fc8150ce04166b6e506074f43c3c4.jpg">
+        </div>
+        <div class="cll">
+            <img src="https://dappimg.com/media/image/app/6d8fc8150ce04166b6e506074f43c3c4.jpg">
+        </div>
+        <div class="cll">
+            <img src="https://pbs.twimg.com/media/EscHbBCUYAA8bAD.png">
+        </div>
+        <div class="cll">
+            <img src="https://pbs.twimg.com/media/EscHbBCUYAA8bAD.png">
+        </div>
+        <div class="cll">
+            <img src="https://dappimg.com/media/image/app/6d8fc8150ce04166b6e506074f43c3c4.jpg">
+        </div>
+        <div class="cll">
+            <img src="https://dappimg.com/media/image/app/6d8fc8150ce04166b6e506074f43c3c4.jpg">
+        </div>
+        <div class="cll">
+            <img src="https://pbs.twimg.com/media/EscHbBCUYAA8bAD.png">
+        </div>
+        <div class="cll">
+            <img src="https://pbs.twimg.com/media/EscHbBCUYAA8bAD.png">
+        </div>
+        <div class="cll">
+            <img src="https://dappimg.com/media/image/app/6d8fc8150ce04166b6e506074f43c3c4.jpg">
+        </div>
+        <div class="cll">
+            <img src="https://dappimg.com/media/image/app/6d8fc8150ce04166b6e506074f43c3c4.jpg">
+        </div>
+        <div class="cll">
+            <img src="https://pbs.twimg.com/media/EscHbBCUYAA8bAD.png">
+        </div>
+        <div class="cll">
+            <img src="https://pbs.twimg.com/media/EscHbBCUYAA8bAD.png">
+        </div>
+        <div class="cll">
+            <img src="https://dappimg.com/media/image/app/6d8fc8150ce04166b6e506074f43c3c4.jpg">
+        </div>
+        <div class="cll">
+            <img src="https://dappimg.com/media/image/app/6d8fc8150ce04166b6e506074f43c3c4.jpg">
+        </div>
+        <div class="cll">
+            <img src="https://pbs.twimg.com/media/EscHbBCUYAA8bAD.png">
+        </div>
+        <div class="cll">
+            <img src="https://pbs.twimg.com/media/EscHbBCUYAA8bAD.png">
+        </div>
+        <div class="cll">
+            <img src="https://dappimg.com/media/image/app/6d8fc8150ce04166b6e506074f43c3c4.jpg">
+        </div>
+        <div class="cll">
+            <img src="https://dappimg.com/media/image/app/6d8fc8150ce04166b6e506074f43c3c4.jpg">
+        </div>
+        <div class="cll">
+            <img src="https://pbs.twimg.com/media/EscHbBCUYAA8bAD.png">
+        </div>
+        <div class="cll">
+            <img src="https://pbs.twimg.com/media/EscHbBCUYAA8bAD.png">
+        </div>
+        <div class="cll">
+            <img src="https://dappimg.com/media/image/app/6d8fc8150ce04166b6e506074f43c3c4.jpg">
+        </div>
+        <div class="cll">
+            <img src="https://dappimg.com/media/image/app/6d8fc8150ce04166b6e506074f43c3c4.jpg">
+        </div>
+        <div class="cll">
+            <img src="https://pbs.twimg.com/media/EscHbBCUYAA8bAD.png">
+        </div>
+        <div class="cll">
+            <img src="https://pbs.twimg.com/media/EscHbBCUYAA8bAD.png">
+        </div>
+        <div class="cll">
+            <img src="https://dappimg.com/media/image/app/6d8fc8150ce04166b6e506074f43c3c4.jpg">
+        </div>
+        <div class="cll">
+            <img src="https://dappimg.com/media/image/app/6d8fc8150ce04166b6e506074f43c3c4.jpg">
+        </div>
+        <div class="cll">
+            <img src="https://pbs.twimg.com/media/EscHbBCUYAA8bAD.png">
+        </div>
+        <div class="cll">
+            <img src="https://pbs.twimg.com/media/EscHbBCUYAA8bAD.png">
+        </div>
+    </div>
+</body>
+
+</html>
